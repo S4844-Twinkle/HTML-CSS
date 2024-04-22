@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML CSS Perfection - Home</title>
+
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<main>
+		<!-- header -->
+		<header id="header">
+			<!-- container -->
+			<div class="container">
+				<!-- header content -->
+				<div class="header-content">
+					<!-- row -->
+					<div class="row">
+						<!-- col 1 -->
+						<div class="col-1">
+							<p>회원상세</p>
+						</div>
+						<!-- col 11 -->
+						<div class="col-11">
+							<p class="red_txt">필수항목</p>
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- header content -->
+			</div>
+			<!-- container -->
+		</header>
+		<!-- header -->
+
+		<!-- navigation -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- menu bar -->
+				<div class="menu-bar">
+					<!-- list -->
+					<ul>
+						<li><a href="#">기본정보 관리</a></li>
+						<li class="active"><a href="#">투자유형 관리</a></li>
+						<li><a href="#">입출금내역 조회</a></li>
+						<li><a href="#">영업내역 조회</a></li>
+						<li><a href="#">투자내역 조회</a></li>
+						<li><a href="#">채권내역 조회</a></li>
+						<li><a href="#">SMS 관리</a></li>
+						<li><a href="#">상담내역 관리</a></li>
+						<li><a href="#">1:1문의내역 조회</a></li>
+					</ul>
+					<!-- list -->
+				</div>
+				<!-- menu bar -->
+			</div>
+			<!-- container -->
+		</nav>
+		<!-- navigation -->
+
+		<!-- filter row -->
+		<div class="filter-row">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row brdr-btm">
+					<!-- col 6 -->
+					<div class="col-7">
+						<p class="smll-txtcntnt">신청 목록 <span>(총 100명 | 승인대기 1건)</span></p>
+					</div>
+					<!-- col 1 -->
+					<div class="col-5 dropdownfilter">
+						<div class="row algn-slf">
+							<div class="col-4">
+								<div class="dropdown">
+									<p>승인여부 전체 <i class="fa-solid fa-chevron-down"></i></p>
+									<ul class="select-filter">
+										<li>승인여부 전체</li>
+										<li>승인대기</li>
+										<li>승인완료</li>
+										<li>승인거부</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-4">
+								<div class="dropdown">
+									<p>신청일시순 <i class="fa-solid fa-chevron-down"></i></p>
+									<ul class="select-filter">
+										<li>신청일시순</li>
+										<li>승인일시순</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-4">
+								<div class="dropdown">
+									<p>50개씩 보기 <i class="fa-solid fa-chevron-down"></i></p>
+									<ul class="select-filter">
+										<li>50개씩 보기</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- filter row -->
+
+		<!-- next filter row -->
+		<div class="filter-row1">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row algn-slf">
+					<!-- col 6 -->
+					<div class="col-8">
+						<button class="btn btn-blu">등록</button>
+					</div>
+					<!-- col 1 -->
+					<div class="col-1">
+						<p>선택한 0건</p>
+					</div>
+					<!-- col 1 -->
+					<div class="col-1 text-right">
+						<div class="dropdown">
+							<p>승인상태 변경 <i class="fa-solid fa-chevron-down"></i></p>
+							<ul class="select-filter">
+								<li>승인상태 변경</li>
+								<li>승인완료</li>
+								<li>승인거부</li>
+							</ul>
+						</div>
+					</div>
+					<!-- col 1 -->
+					<div class="col-1 text-right">
+						<button class="btn btn-blu">저장</button>
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- next filter row -->
+
+		<!-- table data -->
+		<div class="table-datarow">
+			<!-- container -->
+			<div class="container">
+				<!-- table data -->
+				<table class="table-data">
+					<thead>
+						<tr>
+							<th><input type="checkbox" class="select-all"></th>
+							<th>No</th>
+							<th>기존유형</th>
+							<th>신청유형</th>
+							<th>제출서류</th>
+							<th>신청일시</th>
+							<th>승인여부</th>
+							<th width="20%">승인거부 사유</th>
+							<th>승인일시</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" class="select-one"></td>
+							<td>1</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn-orng alert">승인대기</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>2</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn alert">승인거부</p></td>
+							<td class="wrd-brk">서류 식별 불가 금융투자업자에 계좌를 개설한지 1년 미만으로 전문투자자 승인 불가</td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>3</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="success alert">승인대기</p></td>
+							<td></td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one"></td>
+							<td>4</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn-orng alert">승인대기</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>5</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn alert">승인거부</p></td>
+							<td class="wrd-brk">서류 식별 불가 금융투자업자에 계좌를 개설한지 1년 미만으로 전문투자자 승인 불가</td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>6</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="success alert">승인대기</p></td>
+							<td></td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one"></td>
+							<td>7</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn-orng alert">승인대기</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>8</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn alert">승인거부</p></td>
+							<td class="wrd-brk">서류 식별 불가 금융투자업자에 계좌를 개설한지 1년 미만으로 전문투자자 승인 불가</td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>9</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="success alert">승인대기</p></td>
+							<td></td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one"></td>
+							<td>10</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn-orng alert">승인대기</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>11</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="warn alert">승인거부</p></td>
+							<td class="wrd-brk">서류 식별 불가 금융투자업자에 계좌를 개설한지 1년 미만으로 전문투자자 승인 불가</td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="select-one" disabled></td>
+							<td>12</td>
+							<td>소득적격</td>
+							<td>개인전문</td>
+							<td><p class="txt-gry">보기</p></td>
+							<td>2023-01-10 09:00:00</td>
+							<td><p class="success alert">승인대기</p></td>
+							<td></td>
+							<td>2023-01-10 09:00:00</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- table data -->
+				<div class="pagination">
+					<ul class="pagination-list">
+						<li class="first-page"><i class="fa-solid fa-angles-left"></i></li>
+						<li class="prev-page"><i class="fa-solid fa-angle-left"></i></li>
+						<li class="active-page">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+						<li class="last-page"><i class="fa-solid fa-angles-right"></i></li>
+						<li class="next-page"><i class="fa-solid fa-angle-right"></i></li>
+					</ul>
+				</div>
+			</div>	
+			<!-- container -->
+		</div>
+		<!-- table data -->
+
+	</main>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
